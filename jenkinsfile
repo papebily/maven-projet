@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout Code ') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/papebily/maven-projet.git'
+             git branch: 'master', url: 'https://github.com/papebily/maven-projet.git'
             }
         }
         stage('Build Project') {
